@@ -10,7 +10,8 @@
   justify-content: center;
   align-items: center;
   /* background-color: #16154B; */
-  background-color: pink;
+  /* background-color: pink; */
+  background-color: #C3C2C6;
 }
 #logo{
   position: absolute;
