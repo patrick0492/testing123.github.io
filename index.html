@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="container">
-    <!-- <div class="container-div"> -->
+    <div class="container-div">
       <svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" xml:space="preserve" viewBox="15.13 18.72 370.23 366.12">
         <g id="group">
           <!-- <polygon fill="none" points="0,1.002 400,1.002 400,400 0,400  "/> -->
@@ -194,12 +194,13 @@
         L671.228,236.898z"/>
       </g>
       </svg>
-    <!-- </div> -->
+    </div>
     <!-- <div class="container-div"> -->
     </div>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/GSDevTools.min.js"></script>
   <script>
     // window.onload = function () {
     // if (localStorage.getItem("hasCodeRunBefore") === null) {
@@ -207,6 +208,7 @@
     //     localStorage.setItem("hasCodeRunBefore", true);
     //   }
     // }
+    GSDevTools.create();
 
     const tl = gsap.timeline();
     tl.to('svg#logo', .5,{
@@ -231,7 +233,7 @@
     // .to('svg#Tekst g > *', 1,{
     //   fill: '#fff',
     // })
-    .to('.container', 1,{
+    .to('.container', .5,{
       background: '#16154B',
     })
     .from('svg#logo', .5,{
@@ -241,17 +243,25 @@
     // .to('svg#logo', .5,{
     //   y: '100',
     // })
-    .to('svg#Tekst g > path', .5,{
+    .from('svg#Tekst g > path', .5,{
       // fill: '#fff',
-      opacity: 1,
-    })
-    .to('svg#Tekst g > path',1,{
+      // opacity: 0,
+      scale: 1,
+      transformOrigin: '50% 50%',
+      stagger:{
+        amount: .250,
+        from: 'random',
+      },
+      // y: '-20'
+      y: '400',
+    },'-=.7')
+    .to('svg#Tekst g > path', .5,{
       // opacity: 0,
       // fill: '#fff',
       scale: 0,
       transformOrigin: '50% 50%',
       // stagger: 0.100,
-      x: '-400',
+      y: '400',
       ease: 'power4.inOut',
       stagger: {
       amount: .250,
@@ -260,8 +270,18 @@
     },'+=1')
     .to('svg#logo', .5,{
       scale: 0,
-      rotate: '3600deg'
-    })
+      // rotate: '3600deg'
+    },'-=.5')
+
+    let mm = gsap.matchMedia();
+
+    mm.add("(min-width: 800px)", () => {
+      // desktop setup code here...
+    });
+
+    mm.add("(max-width: 799px)", () => {
+      // mobile setup code here...
+    });
   </script>
 </body>
 </html>
