@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="toggle"></div>
+  <div class="sidebarclose">Close Sub</div>
+  <div id="sidebar" class="">
+    <ul>
+      <li class="submenulink"><a href="">Tea &#8594;</a></li>
+      <li class="submenulink-nothing"><a href="">Subscriptions</a></li>
+      <li class="submenulink3"><a href="">Equipment &#8594;</a></li>
+      <li class="submenulink-nothing"><a href="">Merchandise</a></li>
+      <li class="submenulink-nothing"><a href="">Pantry</a></li>
+      <li class="submenulink4"><a href="">Gifting &#8594;</a></li>
+    </ul>
+  </div>
+  <div class="sidebarsub">
+    <ul class="menutitle">
+      <li class="red"><a href="#!">View all Tea &#8594;</a></li>
+    </ul>
+    <ul class="menu" id="datamenu">
+      <li class="header-link"><a href="">Tea Blends</a></li>
+      <li class="menu-link submenulink2" data-li="teablack"><a href="">Black Tea</a></li>
+      <li class="menu-link submenulink2" data-li="teawhite"><a href="">White Tea</a></li>
+      <li class="menu-link submenulink2" data-li="teagreen"><a href="">Green Tea</a></li>
+      <li class="menu-link submenulink2" data-li="teaherbal"><a href="">Herbal Tea</a></li>
+      <li class="menu-link submenulink2" data-li="teaspices"><a href="">Spices Tea</a></li>
+      <li class="menu-link submenulink2" data-li="tearooibos"><a href="">Rooibos Tea</a></li>
+      <li class="menu-link submenulink2" data-li="teafruit"><a href="">Fruit Tea</a></li>
+      <li class="menu-link submenulink2" data-li="teaice"><a href="">Ice Tea</a></li>
+    </ul>
+    <ul class="menu" id="datamenu">
+      <li class="header-link"><a href="">Tea Combinations</a></li>
+      <li class="menu-link submenulink2" data-li="teablack"><a href="">Joy of Tea</a></li>
+      <li class="menu-link submenulink2" data-li="teawhite"><a href="">Herbal Super Blends</a></li>
+      <li class="menu-link submenulink2" data-li="teagreen"><a href="">Inspiration</a></li>
+      <li class="menu-link submenulink2" data-li="teagreen"><a href="">Tea Topics</a></li>
+    </ul>
+   </div> 
+   <div class="sidebarsub3">
+    <ul class="menutitle">
+      <li class="red"><a href="#!">View all Equipment &#8594;</a></li>
+    </ul>
+    <ul class="menu">
+      <li class="header-link"><a href="">Brew Gear</a></li>
+      <li class="menu-link"><a href="">Manual Brewing</a></li>
+      <li class="menu-link"><a href="">Machine Brewing</a></li>
+      <li class="menu-link"><a href="">Tea Machines</a></li>
+      <li class="menu-link"><a href="">Blenders</a></li>
+    </ul>
+    <ul class="menu">
+      <li class="header-link"><a href="">Accesories</a></li>
+      <li class="menu-link"><a href="">Brewing Accesories</a></li>
+      <li class="menu-link"><a href="">Filter Papers</a></li>
+      <li class="menu-link"><a href="">Glasses</a></li>
+      <li class="menu-link"><a href="">Tea Casing</a></li>
+      <li class="menu-link"><a href="">Tableware</a></li>
+      <li class="menu-link"><a href="">Ice Tea Accesories</a></li>
+    </ul>   
+   </div> 
+   <div class="sidebarsub4">
+    <ul class="menutitle">
+      <li class="red"><a href="#!">View all Gifting &#8594;</a></li>
+    </ul>
+    <ul class="menu">
+      <li class="header-link"><a href="">Gift Bags</a></li>
+      <li class="menu-link"><a href="">Gift Bags Tea</a></li>
+      <li class="menu-link"><a href="">Accesorie Gift bags</a></li>
+    </ul>
+    <ul class="menu">
+      <li class="header-link"><a href="">Gift Cards</a></li>
+      <li class="menu-link"><a href="">Tea Supreme E-Gift Card</a></li>
+    </ul> 
+    <ul class="menu">
+      <li class="header-link"><a href="">Gift Ideas</a></li>
+      <li class="menu-link"><a href="">Under $15</a></li>
+      <li class="menu-link"><a href="">Under $30</a></li>
+      <li class="menu-link"><a href="">Under $50</a></li>
+      <li class="menu-link"><a href="">Under $100</a></li>
+    </ul> 
+   </div> 
+  <div class="sidebarsub2">
+    <div id="datamenu">
+
+      <div class="container">
+
+        <div class="item teablack active">
+          <div class="item-img">
+            <img src="img/black-tea.png" alt="">
+          </div>
+          <div class="item-info">
+            <p class="subtitle">Tea Supreme</p>
+            <h1 class="title">Black Tea</h1>
+            <p class="description">Strawberry and Pineapple Blend</p>
+          </div> 
+          <div class="item-options">
+            <div class="wrapper">
+              <label for="Blend">Blend:</label>
+              <select name="Blend" id="blend">
+                <option value="Green Tea">Black Tea</option>
+                <option value="Green Tea">Black Tea</option>
+                <option value="Green Tea">White Tea</option>
+                <option value="Green Tea">Herbal Tea</option>
+                <option value="Green Tea">Ice Tea</option>
+              </select>
+            </div>
+            <div class="wrapper">
+              <label for="Blend">Weight:</label>
+              <select name="Weight" id="weight">
+                <option value="Green Tea">250g</option>
+                <option value="Green Tea">500g</option>
+                <option value="Green Tea">1kg</option>
+                <option value="Green Tea">150g</option>
+              </select>
+            </div>
+            <div class="wrapper">
+              <label for="quantity">Quantity:</label>
+              <input type="number" id="quantity" name="quantity" min="1" max="5" value="1">
+            </div>
+
+            <input type="submit" value="Add To Cart" class="submit">
+                        
+            <div class="wrapper">
+              <a href="" class="details">View Details</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="item teawhite" style="display: none;">
+          <div class="item-img">
+            <img src="img/white-tea.png" alt="">
+          </div>
+          <div class="item-info">
+            <p class="subtitle">Tea Supreme</p>
+            <h1 class="title">White Tea</h1>
+            <p class="description">Strawberry and Pineapple Blend</p>
+          </div> 
+          <div class="item-options">
+            <div class="wrapper">
+              <label for="Blend">Blend:</label>
+              <select name="Blend" id="blend">
+                <option value="Green Tea">White Tea</option>
+                <option value="Green Tea">Black Tea</option>
+                <option value="Green Tea">White Tea</option>
+                <option value="Green Tea">Herbal Tea</option>
+                <option value="Green Tea">Ice Tea</option>
+              </select>
+            </div>
+            <div class="wrapper">
+              <label for="Blend">Weight:</label>
+              <select name="Weight" id="weight">
+                <option value="Green Tea">250g</option>
+                <option value="Green Tea">500g</option>
+                <option value="Green Tea">1kg</option>
+                <option value="Green Tea">150g</option>
+              </select>
+            </div>
+            <div class="wrapper">
+              <label for="quantity">Quantity:</label>
+              <input type="number" id="quantity" name="quantity" min="1" max="5" value="1">
+            </div>
+
+            <input type="submit" value="Add To Cart" class="submit">
+                        
+            <div class="wrapper">
+              <a href="" class="details">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="item teagreen" style="display: none;">
+          <div class="item-img">
+            <img src="img/green-tea.png" alt="">
+          </div>
+          <div class="item-info">
+            <p class="subtitle">Tea Supreme</p>
+            <h1 class="title">Green Tea</h1>
+            <p class="description">Strawberry and Pineapple Blend</p>
+          </div> 
+          <div class="item-options">
+            <div class="wrapper">
+              <label for="Blend">Blend:</label>
+              <select name="Blend" id="blend">
+                <option value="Green Tea">Green Tea</option>
+                <option value="Green Tea">Black Tea</option>
+                <option value="Green Tea">White Tea</option>
+                <option value="Green Tea">Herbal Tea</option>
+                <option value="Green Tea">Ice Tea</option>
+              </select>
+            </div>
+            <div class="wrapper">
+              <label for="Blend">Weight:</label>
+              <select name="Weight" id="weight">
+                <option value="Green Tea">250g</option>
+                <option value="Green Tea">500g</option>
+                <option value="Green Tea">1kg</option>
+                <option value="Green Tea">150g</option>
+              </select>
+            </div>
+            <div class="wrapper">
+              <label for="quantity">Quantity:</label>
+              <input type="number" id="quantity" name="quantity" min="1" max="5" value="1">
+            </div>
+
+            <input type="submit" value="Add To Cart" class="submit">
+                        
+            <div class="wrapper">
+              <a href="" class="details">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="item teaherbal" style="display: none;">
+          <div class="item-img">
+            <img src="img/kruiden-tea.png" alt="">
+          </div>
+          <div class="item-info">
+            <p class="subtitle">Tea Supreme</p>
+            <h1 class="title">Herbal Tea</h1>
+            <p class="description">Strawberry and Pineapple Blend</p>
+          </div> 
+          <div class="item-options">
+            <div class="wrapper">
+              <label for="Blend">Blend:</label>
+              <select name="Blend" id="blend">
+                <option value="Green Tea">Herbal Tea</option>
+                <option value="Green Tea">Black Tea</option>
+                <option value="Green Tea">White Tea</option>
+                <option value="Green Tea">Herbal Tea</option>
+                <option value="Green Tea">Ice Tea</option>
+              </select>
+            </div>
+            <div class="wrapper">
+              <label for="Blend">Weight:</label>
+              <select name="Weight" id="weight">
+                <option value="Green Tea">250g</option>
+                <option value="Green Tea">500g</option>
+                <option value="Green Tea">1kg</option>
+                <option value="Green Tea">150g</option>
+              </select>
+            </div>
+            <div class="wrapper">
+              <label for="quantity">Quantity:</label>
+              <input type="number" id="quantity" name="quantity" min="1" max="5" value="1">
+            </div>
+
+            <input type="submit" value="Add To Cart" class="submit">
+                        
+            <div class="wrapper">
+              <a href="" class="details">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="item teaspices active">
+          <div class="item-img">
+            <img src="img/spices-tea.png" alt="">
+          </div>
+          <div class="item-info">
+            <p class="subtitle">Tea Supreme</p>
+            <h1 class="title">Spices Tea</h1>
+            <p class="description">Strawberry and Pineapple Blend</p>
+          </div> 
+          <div class="item-options">
+            <div class="wrapper">
+              <label for="Blend">Blend:</label>
+              <select name="Blend" id="blend">
+                <option value="Green Tea">Spices Tea</option>
+                <option value="Green Tea">Black Tea</option>
+                <option value="Green Tea">White Tea</option>
+                <option value="Green Tea">Herbal Tea</option>
+                <option value="Green Tea">Ice Tea</option>
+              </select>
+            </div>
+            <div class="wrapper">
+              <label for="Blend">Weight:</label>
+              <select name="Weight" id="weight">
+                <option value="Green Tea">250g</option>
+                <option value="Green Tea">500g</option>
+                <option value="Green Tea">1kg</option>
+                <option value="Green Tea">150g</option>
+              </select>
+            </div>
+            <div class="wrapper">
+              <label for="quantity">Quantity:</label>
+              <input type="number" id="quantity" name="quantity" min="1" max="5" value="1">
+            </div>
+
+            <input type="submit" value="Add To Cart" class="submit">
+                        
+            <div class="wrapper">
+              <a href="" class="details">View Details</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="item tearooibos" style="display: none;">
+          <div class="item-img">
+            <img src="img/rooibos-tea.png" alt="">
+          </div>
+          <div class="item-info">
+            <p class="subtitle">Tea Supreme</p>
+            <h1 class="title">Rooibos Tea</h1>
+            <p class="description">Strawberry and Pineapple Blend</p>
+          </div> 
+          <div class="item-options">
+            <div class="wrapper">
+              <label for="Blend">Blend:</label>
+              <select name="Blend" id="blend">
+                <option value="Green Tea">Rooibos Tea</option>
+                <option value="Green Tea">Black Tea</option>
+                <option value="Green Tea">White Tea</option>
+                <option value="Green Tea">Herbal Tea</option>
+                <option value="Green Tea">Ice Tea</option>
+              </select>
+            </div>
+            <div class="wrapper">
+              <label for="Blend">Weight:</label>
+              <select name="Weight" id="weight">
+                <option value="Green Tea">250g</option>
+                <option value="Green Tea">500g</option>
+                <option value="Green Tea">1kg</option>
+                <option value="Green Tea">150g</option>
+              </select>
+            </div>
+            <div class="wrapper">
+              <label for="quantity">Quantity:</label>
+              <input type="number" id="quantity" name="quantity" min="1" max="5" value="1">
+            </div>
+
+            <input type="submit" value="Add To Cart" class="submit">
+                        
+            <div class="wrapper">
+              <a href="" class="details">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="item teafruit" style="display: none;">
+          <div class="item-img">
+            <img src="img/fruit-tea.png" alt="">
+          </div>
+          <div class="item-info">
+            <p class="subtitle">Tea Supreme</p>
+            <h1 class="title">Fruit Tea</h1>
+            <p class="description">Strawberry and Pineapple Blend</p>
+          </div> 
+          <div class="item-options">
+            <div class="wrapper">
+              <label for="Blend">Blend:</label>
+              <select name="Blend" id="blend">
+                <option value="Green Tea">Fruit Tea</option>
+                <option value="Green Tea">Black Tea</option>
+                <option value="Green Tea">White Tea</option>
+                <option value="Green Tea">Herbal Tea</option>
+                <option value="Green Tea">Ice Tea</option>
+              </select>
+            </div>
+            <div class="wrapper">
+              <label for="Blend">Weight:</label>
+              <select name="Weight" id="weight">
+                <option value="Green Tea">250g</option>
+                <option value="Green Tea">500g</option>
+                <option value="Green Tea">1kg</option>
+                <option value="Green Tea">150g</option>
+              </select>
+            </div>
+            <div class="wrapper">
+              <label for="quantity">Quantity:</label>
+              <input type="number" id="quantity" name="quantity" min="1" max="5" value="1">
+            </div>
+
+            <input type="submit" value="Add To Cart" class="submit">
+                        
+            <div class="wrapper">
+              <a href="" class="details">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="item teaice" style="display: none;">
+          <div class="item-img">
+            <img src="img/ice-tea-family-packshot.png" alt="">
+          </div>
+          <div class="item-info">
+            <p class="subtitle">Tea Supreme</p>
+            <h1 class="title">Ice Tea</h1>
+            <p class="description">Strawberry and Pineapple Blend</p>
+          </div> 
+          <div class="item-options">
+            <div class="wrapper">
+              <label for="Blend">Blend:</label>
+              <select name="Blend" id="blend">
+                <option value="Green Tea">Ice Tea</option>
+                <option value="Green Tea">Black Tea</option>
+                <option value="Green Tea">White Tea</option>
+                <option value="Green Tea">Herbal Tea</option>
+                <option value="Green Tea">Ice Tea</option>
+              </select>
+            </div>
+            <div class="wrapper">
+              <label for="Blend">Weight:</label>
+              <select name="Weight" id="weight">
+                <option value="Green Tea">250g</option>
+                <option value="Green Tea">500g</option>
+                <option value="Green Tea">1kg</option>
+                <option value="Green Tea">150g</option>
+              </select>
+            </div>
+            <div class="wrapper">
+              <label for="quantity">Quantity:</label>
+              <input type="number" id="quantity" name="quantity" min="1" max="5" value="1">
+            </div>
+
+            <input type="submit" value="Add To Cart" class="submit">
+                        
+            <div class="wrapper">
+              <a href="" class="details">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var li_elements = document.querySelectorAll('#datamenu li');
+    var item_elements = document.querySelectorAll('.item');
+
+    for(var i = 0; i < li_elements.length; i++){
+      li_elements[i].addEventListener('mouseover', function(){
+        li_elements.forEach(function(li){
+          li.classList.remove('active');
+        })
+        this.classList.add('active');
+        var li_value = this.getAttribute('data-li');
+        item_elements.forEach(function(item){
+          item.style.display = 'none';
+        })
+        if(li_value == 'teablack'){
+          document.querySelector('.' + li_value).style.display = 'block';
+        }
+        else if(li_value == 'teawhite'){
+          document.querySelector('.' + li_value).style.display = 'block';
+        }
+        else if(li_value == 'teagreen'){
+          document.querySelector('.' + li_value).style.display = 'block';
+        }
+        else if(li_value == 'teaherbal'){
+          document.querySelector('.' + li_value).style.display = 'block';
+        }
+        else if(li_value == 'teaspices'){
+          document.querySelector('.' + li_value).style.display = 'block';
+        }
+        else if(li_value == 'tearooibos'){
+          document.querySelector('.' + li_value).style.display = 'block';
+        }
+        else if(li_value == 'teafruit'){
+          document.querySelector('.' + li_value).style.display = 'block';
+        }
+        else if(li_value == 'teaice'){
+          document.querySelector('.' + li_value).style.display = 'block';
+        }
+        else{
+          console.log('');
+        }
+
+      })
+    }
+  </script>
+      
+  </div>
+
+  <script type="text/javascript">
+    // function toggleMenu(){
+    //   const menuToggle = document.querySelector('.menuToggle');
+    //   const navigation = document.querySelector('#navigation');
+    //   menuToggle.classList.toggle('active')
+    //   navigation.classList.toggle('active')
+    // }
+    // document.onclick = function(e){
+    //   if(e.target.id !== 'navigation' && e.target.id !== 'menuToggle'){
+    //     menuToggle.classList.remove('active');
+    //     navigation.classList.remove('active')
+    //   }
+    // }
+    const togglebtn = document.querySelector('.toggle');
+    const sideBarLevel1 = document.querySelector('#sidebar');
+    const sidebarClose = document.querySelector('.sidebarclose');
+
+    function toggleMenu(){
+      // togglebtn.classList.toggle('active')
+      sideBarLevel1.classList.toggle( 'active')
+      sidebarClose.classList.add('active')
+    }
+    togglebtn.addEventListener('click', toggleMenu)
+
+    sidebarClose.addEventListener('click', ()=>{
+      sidebarClose.classList.remove('active')
+    })
+
+
+
+  </script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  <script src="js/jquery.js"></script>
+  <script>
+    $(document).ready(function() {  
+      // $('.toggle').click(function(){
+      //   $('#sidebar').addClass('active');
+      // });
+
+      $('.submenulink').hover(function(){     
+          $('.sidebarsub').addClass('subactive');    
+          $('.sidebarsub2').removeClass('subactive');    
+      });
+      $('#sidebar').hover(function(){     
+          // $('.sidebarsub').removeClass('subactive');  
+          $('.sidebarsub2').removeClass('subactive'); 
+      });
+      $('.sidebarsub').mouseleave(function(){     
+          // $('.sidebarsub').removeClass('subactive');  
+          $('.sidebarsub3').removeClass('subactive'); 
+          $('.sidebarsub4').removeClass('subactive');   
+      });
+      $('.submenulink-nothing').hover(function(){     
+          $('.sidebarsub').removeClass('subactive');    
+          $('.sidebarsub3').removeClass('subactive'); 
+          $('.sidebarsub4').removeClass('subactive'); 
+          $('.sidebarsub2').removeClass('subactive');    
+      });
+      $('.submenulink3').hover(function(){     
+          $('.sidebarsub3').addClass('subactive');    
+      });
+      $('.sidebarsub3').mouseleave(function(){     
+          $('.sidebarsub3').removeClass('subactive');    
+      });
+      $('.submenulink4').hover(function(){     
+          $('.sidebarsub4').addClass('subactive');    
+      });
+      $('.sidebarsub4').mouseleave(function(){     
+          $('.sidebarsub4').removeClass('subactive');    
+      });
+      $('.submenulink2').hover(function(){     
+          $('.sidebarsub2').addClass('subactive');    
+      });
+      $('.sidebarsub2').mouseleave(function(){     
+          $('.sidebarsub2').removeClass('subactive');    
+      });
+      $('.sidebarsub2').hover(function(){     
+          $('.sidebarsub').addClass('subactive');    
+      });
+      $('.sidebarsub3').hover(function(){     
+          $('.sidebarsub').removeClass('subactive');    
+      });
+      $('#datamenu .header-link').hover(function(){     
+          $('.sidebarsub2').removeClass('subactive');    
+      });
+
+      if ($('.sidebarsub2').hasClass('subactive')) {
+        $(".sidebarsub").addClass('subactive');
+      };
+      if ($('.sidebarsub').not('subactive')) {
+        $(".sidebarsub2").removeClass('subactive');
+      };
+      // if ($('.sidebarsub3').hasClass('subactive')) {
+      //   $(".sidebarsub").removeClass('subactive');
+      // };
+      // if ($('.sidebarsub4').hasClass('subactive')) {
+      //   $(".sidebarsub").removeClass('subactive');
+      // };
+      
+
+
+      // $('.submenulink2').hover(function(){     
+      //   $('.sidebarsub2').addClass('subactive');    
+      // }); 
+      // $('.submenulink2').mouseleave(function(){     
+      //   $('.sidebarsub2').removeClass('subactive');    
+      // }); 
+      // $('.sidebarsub2').mouseleave(function(){     
+      //   $('.sidebarsub2').removeClass('subactive');    
+      // });         
+
+      $('.sidebarclose').click(function(){
+        $('.sidebarsub').removeClass('subactive');  
+        $('#sidebar').removeClass('active'); 
+        $('.sidebarsub2').removeClass('subactive'); 
+        $('.sidebarsub3').removeClass('subactive'); 
+        $('.sidebarsub4').removeClass('subactive'); 
+      });  
+
+
+    });  
+  </script>
+</body>
+</html>
