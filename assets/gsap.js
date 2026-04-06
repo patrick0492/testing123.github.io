@@ -154,4 +154,7 @@ media.add("(max-width: 799px)", () => {
     backgroundColor: 'transparent',
     display: 'none',
   },'+=.25')
+  .to('.container',{
+  display: 'block',
+})
 });
