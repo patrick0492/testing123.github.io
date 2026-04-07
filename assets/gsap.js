@@ -109,27 +109,29 @@ media.add("(min-width: 800px)", () => {
 })
 });
 
+
 media.add("(max-width: 799px)", () => {
   const tl = gsap.timeline();
   tl.to('svg#logo', .5,{
     scale: 1,
     opacity: 1,
     ease: 'back',
-  },'-.1')
+  })
   .to('svg#logo .fill',{
     opacity: 1,
     stagger: 0.250,
     ease: 'power4.inOut',
-  })
+  },'-=.250')
   .to('.intro', .5,{
     background: '#28166f',
   })
-  .from('svg#logo', .5,{
-    y: '95',
-  })
+  // .from('svg#logo', .5,{
+  //   y: '95',
+  // })
   .from('svg#Tekst g > path', .5,{
     scale: 1,
     transformOrigin: '50% 50%',
+  autoAlpha: 0,
     stagger:{
       amount: .250,
       from: 'random',
@@ -153,7 +155,7 @@ media.add("(max-width: 799px)", () => {
   .to('.intro',.5,{
     backgroundColor: 'transparent',
     display: 'none',
-  },'+=.25')
+  })
   .to('.container',{
   display: 'block',
 })
