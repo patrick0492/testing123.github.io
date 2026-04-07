@@ -67,6 +67,11 @@ header.scroll .nav-list {
     display: none;
   }
 }
+@media only screen and (max-width: 500px) {
+  .nav-logo img {
+    max-width: 250px;
+  }
+}
 .nav-list, .sidenav-list {
   font-weight: var(--fw-300);
   font-size: 1.6rem;
