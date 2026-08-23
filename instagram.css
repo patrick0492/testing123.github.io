@@ -47,6 +47,7 @@ body{
   overflow-x: hidden;
   width: 100vw;
   min-height: 100vh;
+  min-height: 100dvh;
 }
 button{
   border: none;
@@ -80,6 +81,7 @@ img{
   display: grid;
   grid-template-columns: var(--sidebar-width) 1fr;
   min-height: 100vh;
+  min-height: 100dvh;
   width: 100%;
 }
 .sidebar{
@@ -87,6 +89,7 @@ img{
   flex-direction: column;
   background-color: var(--bg-card);
   height: 100vh;
+  height: 100dvh;
   border-right: 1px solid var(--border-color);
   padding: clamp(20px, 2.5vw, 32px) clamp(16px, 1.8vw, 24px);
   position: sticky;
