@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram</title>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="instagram.css">
+</head>
+<body>
+  <div class="app-container">
+    <aside class="sidebar">
+      <a href="#" class="brand-logo">
+        <i class="ph-bold ph-instagram-logo"></i>
+        <span>Instagram</span>
+      </a>
+      <div class="user-profile-card">
+        <div class="user-avatar-wrapper">
+          <img src="./img/0011.jpg" class="user-avatar" alt="">
+        </div>
+        <h2 class="user-name">Abhinav Khare</h2>
+        <span class="user-handle">@abhi_navkhare</span>
+        <div class="profile-stats">
+          <div class="stat-item">
+            <span class="stat-value">472</span>
+            <span class="stat-label">Posts</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">12.4k</span>
+            <span class="stat-label">Followers</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">228</span>
+            <span class="stat-label">Following</span>
+          </div>
+        </div>
+        <p class="user-bio">Abhinav Khare <br>UI Designer | Traveler | Lifestyle Blogger</p>
+      </div>
+      <div class="highlights-section">
+        <h3 class="highlights-title">Story Highlights</h3>
+        <div class="highlights-container">
+          <div class="highlight-item">
+            <div class="highlight-ring">
+              <i class="ph ph-plus highlght-add"></i>
+            </div>
+            <span class="highlight-label">New</span>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-ring">
+              <img src="./img/0031.jpg" alt="" class="highlight-img">
+            </div>
+            <span class="highlight-label">Garden</span>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-ring">
+              <img src="./img/0032.jpg" alt=""class="highlight-img">
+            </div>
+            <span class="highlight-label">Camera</span>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-ring">
+              <img src="./img/0033.jpg" alt="" class="highlight-img">
+            </div>
+            <span class="highlight-label">Wildlife</span>
+          </div>
+        </div>
+      </div>
+      <div class="nav nav-menu">
+        <a href="#" class="nav-item active">
+          <i class="ph ph-fill ph-house"></i>
+          <span>Feed</span>
+        </a>
+        <a href="#" class="nav-item">
+          <i class="ph ph-compass"></i>
+          <span>Compass</span>
+        </a>
+        <a href="#" class="nav-item">
+          <i class="ph ph-film-strip"></i>
+          <span>Reels</span>
+        </a>
+        <a href="#" class="nav-item">
+          <i class="ph ph-gear"></i>
+          <span>Settings</span>
+        </a>
+        <a href="#" class="nav-item" id="logoutBtn">
+          <i class="ph ph-sign-out"></i>
+          <span>Logout</span>
+        </a>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <div class="mobile-top-header">
+        <button class="mobile-action-btn" id="mobileCreateBtn">
+          <i class="ph-bold ph-plus"></i>
+        </button>
+        <div class="mobile-logo">Instagram</div>
+        <button class="mobile-action-btn" id="mobileThemeToggleBtn">
+          <i class="ph ph-moon" id="mobileThemeIcon"></i>
+        </button>
+      </div>
+
+      <header class="top-header">
+        <div class="search-box">
+          <i class="ph ph-magnifying-glass"></i>
+          <input type="text" class="search-input" placeholder="Search creators, photos, tags..." id="search-input">
+        </div>
+        <div class="header-actions">
+          <button class="icon-btn" id="themeToggleBtn" title="Toggle Theme">
+            <i class="ph ph-moon" id="themeIcon"></i>
+          </button>
+          <button class="icon-btn" title="Notifications">
+            <i class="ph ph-bell"></i>
+            <span class="badge-dot"></span>
+          </button>
+          <button class="icon-btn" title="Direct Messages">
+            <i class="ph ph-chat-circle-dots" id="themeIcon"></i>
+          </button>
+          <button class="btn-create-post" id="openCreatePostModal">
+            <i class="ph-bold ph-plus" id="themeIcon"></i>
+            <span>Create a post</span>
+          </button>
+        </div>
+      </header>
+
+      <section class="stories-section">
+        <h2 class="section-title">Stories</h2>
+        <div class="stories-flex">
+          <div class="story-card">
+            <div class="story-ring-container your-story">
+              <img src="./img/0011.jpg" class="story-avatar" alt="">
+              <div class="story-add-badge"><i class="ph-bold ph-plus"></i></div>
+            </div>
+            <span class="story-username">Your story</span>
+          </div>
+          <div class="story-card">
+            <div class="story-ring-container unseen">
+              <img src="./img/0030.jpg" class="story-avatar" alt="">
+              <div class="story-live-badge">LIVE</div>
+            </div>
+            <span class="story-username">Sonya</span>
+          </div>
+          <div class="story-card">
+            <div class="story-ring-container unseen">
+              <img src="./img/0031.jpg" class="story-avatar" alt="">
+            </div>
+            <span class="story-username">Adam</span>
+          </div>
+          <div class="story-card">
+            <div class="story-ring-container seen">
+              <img src="./img/0032.jpg" class="story-avatar" alt="">
+            </div>
+            <span class="story-username">Andrew</span>
+          </div>
+          <div class="story-card">
+            <div class="story-ring-container unseen">
+              <img src="./img/0033.jpg" class="story-avatar" alt="">
+            </div>
+            <span class="story-username">Amina</span>
+          </div>
+          <div class="story-card">
+            <div class="story-ring-container seen">
+              <img src="./img/0034.jpg" class="story-avatar" alt="">
+            </div>
+            <span class="story-username">Ashton</span>
+          </div>
+          <div class="story-card">
+            <div class="story-ring-container unseen">
+              <img src="./img/0035.jpg" class="story-avatar" alt="">
+            </div>
+            <span class="story-username">Michael</span>
+          </div>
+          <div class="story-card">
+            <div class="story-ring-container seen">
+              <img src="./img/0036.jpg" class="story-avatar" alt="">
+            </div>
+            <span class="story-username">Sopher</span>
+          </div>
+          <div class="story-card">
+            <div class="story-ring-container seen">
+              <img src="./img/0038.jpg" class="story-avatar" alt="">
+            </div>
+            <span class="story-username">Lucas</span>
+          </div>
+          <div class="story-card">
+            <div class="story-ring-container unseen">
+              <img src="./img/0039.jpg" class="story-avatar" alt="">
+            </div>
+            <span class="story-username">Aleno</span>
+          </div>
+          <div class="story-card">
+            <div class="story-ring-container unseen">
+              <img src="./img/0018.jpg" class="story-avatar" alt="">
+            </div>
+            <span class="story-username">Marcus</span>
+          </div>
+          <div class="story-card">
+            <div class="story-ring-container unseen">
+              <img src="./img/0019.jpg" class="story-avatar" alt="">
+            </div>
+            <span class="story-username">Octavius</span>
+          </div>
+          <div class="story-card">
+            <div class="story-ring-container unseen">
+              <img src="./img/0018.jpg" class="story-avatar" alt="">
+            </div>
+            <span class="story-username">Sandro</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="feed-section">
+        <h2 class="section-title">Feed</h2>
+        <div class="feed-grid" id="feedGrid">
+          <article class="post-card">
+            <div class="post-header">
+              <div class="post-author">
+                <img src="./img/0002.jpg" class="author-avatar" alt="">
+                <div class="author-info">
+                  <h4 class="author-name">Sandro Leena</h4>
+                  <span class="post-location">Dubai, UAE</span>
+                </div>
+              </div>
+              <div class="post-header-actions">
+                <button class="follow-btn">Follow</button>
+                <button class="more-btn"><i class="ph ph-dots-three-horizontal"></i></button>
+              </div>
+            </div>
+            <div class="post-image-container">
+              <img src="./img/bg02.jpg" alt="" class="post-image">
+            </div>
+            <div class="post-content">
+              <div class="post-actions">
+                <div class="action-group">
+                  <i class="ph ph-heart action-icon"></i>
+                  <i class="ph ph-chat-circle action-icon"></i>
+                  <i class="ph ph-paper-plane-tilt action-icon"></i>
+                </div>
+                <i class="ph ph-bookmark-simple action-icon"></i>
+              </div>
+              <div class="post-likes"><i class="ph-fill ph-heart" style="color: #e11d48; vertical-align: middle;"></i> Liked by Octavius and40 others</div>
+              <p class="post-caption">Because occasionally circumstances occur... <span>more</span></p>
+            </div>
+          </article>
+          <article class="post-card">
+            <div class="post-header">
+              <div class="post-author">
+                <img src="./img/0003.jpg" class="author-avatar" alt="">
+                <div class="author-info">
+                  <h4 class="author-name">Jordan Villalobos</h4>
+                  <span class="post-location">Dubai, UAE</span>
+                </div>
+              </div>
+              <div class="post-header-actions">
+                <button class="follow-btn">Follow</button>
+                <button class="more-btn"><i class="ph ph-dots-three-horizontal"></i></button>
+              </div>
+            </div>
+            <div class="post-image-container">
+              <img src="./img/ls04.jpg" alt="" class="post-image">
+            </div>
+            <div class="post-content">
+              <div class="post-actions">
+                <div class="action-group">
+                  <i class="ph ph-heart action-icon"></i>
+                  <i class="ph ph-chat-circle action-icon"></i>
+                  <i class="ph ph-paper-plane-tilt action-icon"></i>
+                </div>
+                <i class="ph ph-bookmark-simple action-icon"></i>
+              </div>
+              <div class="post-likes"><i class="ph-fill ph-heart" style="color: #e11d48; vertical-align: middle;"></i> Liked by Adam and 326 others</div>
+              <p class="post-caption">I must explain to you how all this mistaken... <span>more</span></p>
+            </div>
+          </article>
+          <article class="post-card">
+            <div class="post-header">
+              <div class="post-author">
+                <img src="./img/0004.jpg" class="author-avatar" alt="">
+                <div class="author-info">
+                  <h4 class="author-name">Julien Cannon</h4>
+                  <span class="post-location">Dubai, UAE</span>
+                </div>
+              </div>
+              <div class="post-header-actions">
+                <button class="follow-btn">Follow</button>
+                <button class="more-btn"><i class="ph ph-dots-three-horizontal"></i></button>
+              </div>
+            </div>
+            <div class="post-image-container">
+              <img src="./img/bg01.jpg" alt="" class="post-image">
+            </div>
+            <div class="post-content">
+              <div class="post-actions">
+                <div class="action-group">
+                  <i class="ph ph-heart action-icon"></i>
+                  <i class="ph ph-chat-circle action-icon"></i>
+                  <i class="ph ph-paper-plane-tilt action-icon"></i>
+                </div>
+                <i class="ph ph-bookmark-simple action-icon"></i>
+              </div>
+              <div class="post-likes"><i class="ph-fill ph-heart" style="color: #e11d48; vertical-align: middle;"></i> Liked by Amina and 77 others</div>
+              <p class="post-caption">I will give you a complete account of the system</p>
+            </div>
+          </article>
+          <article class="post-card">
+            <div class="post-header">
+              <div class="post-author">
+                <img src="./img/0005.jpg" class="author-avatar" alt="">
+                <div class="author-info">
+                  <h4 class="author-name">Drew Martinez</h4>
+                  <span class="post-location">Dubai, UAE</span>
+                </div>
+              </div>
+              <div class="post-header-actions">
+                <button class="follow-btn">Follow</button>
+                <button class="more-btn"><i class="ph ph-dots-three-horizontal"></i></button>
+              </div>
+            </div>
+            <div class="post-image-container">
+              <img src="./img/imgbg05.jpg" alt="" class="post-image">
+            </div>
+            <div class="post-content">
+              <div class="post-actions">
+                <div class="action-group">
+                  <i class="ph ph-heart action-icon"></i>
+                  <i class="ph ph-chat-circle action-icon"></i>
+                  <i class="ph ph-paper-plane-tilt action-icon"></i>
+                </div>
+                <i class="ph ph-bookmark-simple action-icon"></i>
+              </div>
+              <div class="post-likes"><i class="ph-fill ph-heart" style="color: #e11d48; vertical-align: middle;"></i> Liked by Ashton and 942 others</div>
+              <p class="post-caption">Nor again is there anyone who loves or pursues... <span>more</span></p>
+            </div>
+          </article>
+          <article class="post-card">
+            <div class="post-header">
+              <div class="post-author">
+                <img src="./img/0006.jpg" class="author-avatar" alt="">
+                <div class="author-info">
+                  <h4 class="author-name">Jeffrey Byrd</h4>
+                  <span class="post-location">Dubai, UAE</span>
+                </div>
+              </div>
+              <div class="post-header-actions">
+                <button class="follow-btn">Follow</button>
+                <button class="more-btn"><i class="ph ph-dots-three-horizontal"></i></button>
+              </div>
+            </div>
+            <div class="post-image-container">
+              <img src="./img/imgbg01.jpg" alt="" class="post-image">
+            </div>
+            <div class="post-content">
+              <div class="post-actions">
+                <div class="action-group">
+                  <i class="ph ph-heart action-icon"></i>
+                  <i class="ph ph-chat-circle action-icon"></i>
+                  <i class="ph ph-paper-plane-tilt action-icon"></i>
+                </div>
+                <i class="ph ph-bookmark-simple action-icon"></i>
+              </div>
+              <div class="post-likes"><i class="ph-fill ph-heart" style="color: #e11d48; vertical-align: middle;"></i> Liked by Lucas and 88 others</div>
+              <p class="post-caption">To take a trivial example</p>
+            </div>
+          </article>
+          <article class="post-card">
+            <div class="post-header">
+              <div class="post-author">
+                <img src="./img/0007.jpg" class="author-avatar" alt="">
+                <div class="author-info">
+                  <h4 class="author-name">Juniper Delacruz</h4>
+                  <span class="post-location">Dubai, UAE</span>
+                </div>
+              </div>
+              <div class="post-header-actions">
+                <button class="follow-btn">Follow</button>
+                <button class="more-btn"><i class="ph ph-dots-three-horizontal"></i></button>
+              </div>
+            </div>
+            <div class="post-image-container">
+              <img src="./img/imgbg02.PNG" alt="" class="post-image">
+            </div>
+            <div class="post-content">
+              <div class="post-actions">
+                <div class="action-group">
+                  <i class="ph ph-heart action-icon"></i>
+                  <i class="ph ph-chat-circle action-icon"></i>
+                  <i class="ph ph-paper-plane-tilt action-icon"></i>
+                </div>
+                <i class="ph ph-bookmark-simple action-icon"></i>
+              </div>
+              <div class="post-likes"><i class="ph-fill ph-heart" style="color: #e11d48; vertical-align: middle;"></i> Liked by Aleno and 123 others</div>
+              <p class="post-caption">But who has any right to find fault</p>
+            </div>
+          </article>
+          <article class="post-card">
+            <div class="post-header">
+              <div class="post-author">
+                <img src="./img/0008.jpg" class="author-avatar" alt="">
+                <div class="author-info">
+                  <h4 class="author-name">Kamden Salinas</h4>
+                  <span class="post-location">Dubai, UAE</span>
+                </div>
+              </div>
+              <div class="post-header-actions">
+                <button class="follow-btn">Follow</button>
+                <button class="more-btn"><i class="ph ph-dots-three-horizontal"></i></button>
+              </div>
+            </div>
+            <div class="post-image-container">
+              <img src="./img/imgbg03.PNG" alt="" class="post-image">
+            </div>
+            <div class="post-content">
+              <div class="post-actions">
+                <div class="action-group">
+                  <i class="ph ph-heart action-icon"></i>
+                  <i class="ph ph-chat-circle action-icon"></i>
+                  <i class="ph ph-paper-plane-tilt action-icon"></i>
+                </div>
+                <i class="ph ph-bookmark-simple action-icon"></i>
+              </div>
+              <div class="post-likes"><i class="ph-fill ph-heart" style="color: #e11d48; vertical-align: middle;"></i> Liked by Marcus and 452 others</div>
+              <p class="post-caption">The charms of pleasure of the moment</p>
+            </div>
+          </article>
+          <article class="post-card">
+            <div class="post-header">
+              <div class="post-author">
+                <img src="./img/0002.jpg" class="author-avatar" alt="">
+                <div class="author-info">
+                  <h4 class="author-name">Waylon Harrison</h4>
+                  <span class="post-location">Dubai, UAE</span>
+                </div>
+              </div>
+              <div class="post-header-actions">
+                <button class="follow-btn">Follow</button>
+                <button class="more-btn"><i class="ph ph-dots-three-horizontal"></i></button>
+              </div>
+            </div>
+            <div class="post-image-container">
+              <img src="./img/imgbg04.PNG" alt="" class="post-image">
+            </div>
+            <div class="post-content">
+              <div class="post-actions">
+                <div class="action-group">
+                  <i class="ph ph-heart action-icon"></i>
+                  <i class="ph ph-chat-circle action-icon"></i>
+                  <i class="ph ph-paper-plane-tilt action-icon"></i>
+                </div>
+                <i class="ph ph-bookmark-simple action-icon"></i>
+              </div>
+              <div class="post-likes"><i class="ph-fill ph-heart" style="color: #e11d48; vertical-align: middle;"></i> Liked by Sophia and 56 others</div>
+              <p class="post-caption">Desire, that they cannot foresee </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="mobile-bottom-nav">
+    <button class="mobile-nav-btn active">
+      <i class="ph-fill ph-house"></i>
+    </button>
+    <button class="mobile-nav-btn">
+      <i class="ph ph-film-strip"></i>
+    </button>
+    <button class="mobile-nav-btn">
+      <i class="ph ph-paper-plane"></i>
+      <span class="nav-badge"></span>
+    </button>
+    <button class="mobile-nav-btn">
+      <i class="ph ph-magnifying-glass"></i>
+    </button>
+    <button class="mobile-nav-btn">
+      <img src="./img/0008.jpg" class="nav-avatar" alt="">
+    </button>
+  </div>
+  
+  <script src="instagram.js"></script>
+</body>
+</html>
